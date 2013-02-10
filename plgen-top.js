@@ -11,8 +11,8 @@ var out = process.argv[3] || 'playlist.m3u'; // Playlist output path.
 var max = process.argv[4] || 15; // Number of top tracks to add.
 var stderr = process.argv[5] || 'stderr.txt'; // File where errors should be dumped.
 
-var clerk = new Clerk('dd00ff1ef043454e9c61e10c88fe85c7',
-                      '0e31599848a01724f56e3eb530760709');
+var clerk = new Clerk('your LastFM api_key', // http://www.last.fm/api
+                      'your LastFM secret');
 var tracks = [];
 var playlist = {};
 
