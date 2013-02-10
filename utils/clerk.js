@@ -15,8 +15,8 @@
 
     get lastFM() {
       return this._lastFm || (this._lastFm = new LastFmNode({
-        api_key: 'dd00ff1ef043454e9c61e10c88fe85c7', // Your api key and secret here; get them from http://www.last.fm/api
-        secret: '0e31599848a01724f56e3eb530760709',
+        api_key: this.lastFmKey, // Your api key and secret here; get them from http://www.last.fm/api
+        secret: this.lastFmSecret,
         useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:20.0) Gecko/20130101 Firefox/20.0'
       }));
     },
